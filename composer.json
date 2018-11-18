@@ -1,0 +1,17 @@
+{
+    "name": "supermundano/sage-bbpress",
+    "description": "BBPress integration for Sage 9",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Faria",
+            "email": "carlos@supermundano.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/bbpress.php"
+        ]
+    }
+}
