@@ -8,9 +8,11 @@ if( class_exists( 'bbpress' ) ) {
 
     //We always return the page template to render bbpress pages
     add_filter('bbp_template_include', function ($template){
+        if( is_bbpress() ){
+            return get_page_template();
+        }
 
-        return get_page_template();
-
+        return $template;
     }, 100, 1);
 
     //To be able to override bbpress templates with blade templates in Sage
